@@ -1,0 +1,148 @@
+body{
+    background-color: rgb(19, 112, 112);
+    display: flex;
+}
+
+.contenedorPrincipal{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    left: 170%;
+    top: 25%;
+    border-radius: 2%;
+    border: 2px solid black;
+}
+
+.form{
+    position: relative;
+    top: 10%;
+    display: block;
+    height: 300px;
+    text-align: center;
+}
+
+.form input{
+    width:250px;
+	padding:10px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+    outline: none;
+}
+
+.contenedorBoton button{
+    background-color: #a19499;
+    height: 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid transparent;
+}
+
+.contenedorBoton button:hover{
+    background-color: #880b3b;
+    border: 2px solid transparent;
+    cursor: pointer;
+    color: wheat;
+}
+
+
+@media (max-width: 380px){
+
+        .contenedorPrincipal{  
+            position: relative;
+            left: 12%;         
+            width: 280px;
+            height: 400px;
+            border-radius: 2%;
+            border: 2px solid black;
+        }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contBoton{
+    display: inline;
+    position: relative;
+    left: 30%;
+    top: 10%;
+}
+.btnRegistrarse1{
+    position: relative;
+    border-radius: 4px;
+    background-color: #880b3b;
+    border: none;
+    color: #e2dada;
+    text-align: center;
+    font-size: 14px;
+    width: 90px;
+    height: 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    bottom: 7%;
+}
+
+.btnRegistrarse1:hover{
+    transform: translateX(10px);
+    background-color: #ec3c80;
+}
+
+
+.contenedorDerechos2{
+    display: block;
+    position: relative;
+    right: 8%;
+    top: 20%;
+    color: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 8px;
+    display: inline;
+}
+
+.logoDerechos2{
+    background-color: aliceblue;
+    position: relative;
+    right: 15%;
+    bottom: 2.3%;
+    border-radius: 50%;
+}
+
+.tituloEmpresa2{
+    position: relative;
+    display: inline;
+    bottom: 7%;
+    letter-spacing: 1px;
+    left: 6.4%;
+}
+
+.tituloDerechos2{
+    display: block;
+    position: relative;
+    left: 27%;
+    bottom: 6%;
+    font-size: 9px;
+    letter-spacing: 1px;
+}

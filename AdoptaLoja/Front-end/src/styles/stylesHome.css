@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navbar */
+.content{
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.navbar{
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    padding: 10px 0;
+    background: rgb(255, 255, 255);
+    transition: all .3s ease;
+}
+
+.navbar.sticky{
+    padding: 10px 0;
+    background:rgb(255, 255, 255);
+}
+
+.navbar .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    color: rgb(2, 2, 2);
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navbar .menu-list{
+    display: inline-flex;
+}
+
+
+.menu-list li{
+    list-style:  none;
+}
+
+.menu-list input{
+    outline: none;
+    position: relative;
+    width: 300px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+
+.menu-list li a{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: all .3s ease;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.menu-list li a:hover{
+    color:  rgb(19, 59, 112);
+    font-size: 16px;
+    border-bottom: 2px solid rgb(19, 112, 112);
+
+}
+
+.icon{
+    color: rgb(15, 36, 95);
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.icon.cancel-btn{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+
+
+
+@keyframes slide{
+    0%{
+background: url(../../img/1.jpg)no-repeat center center/cover;
+    }
+    35%{
+background: url(../../img/2.jpg)no-repeat center center/cover;
+
+    }
+    70%{
+        background: url(../../img/1.jpg)no-repeat center center/cover;
+    }
+    100%{
+        background: url(../../img/1.jpg)no-repeat center center/cover;
+        
+    }
+}
+
+
+/* TEAMS */
+
+.title{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+
+.max-width{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+}
+
+.teams .carousel{
+    padding:  50px 80px;
+    display: flex;
+}
+
+.teams .carousel .card{
+    background: rgb(255, 255, 255);
+    border-radius: 6px;
+    padding: 35px 5px;
+    text-align: center;
+    transition: all 0.3s ease;
+    
+
+}
+
+.teams .carousel .card:hover{
+    background: rgb(255, 255, 255);
+}
+
+.teams .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+
+}
+
+
+.teams .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    
+}
+
+.teams .carousel .card img{
+    background-color: #222;
+    height: 500px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 4%;
+    transition: all .3s ease;
+}
+
+
+.teams .carousel .card:hover img{
+    border-color: #fff;
+    cursor: pointer;
+}
+
+
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px ;;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid rgb(16, 130, 145)!important;
+    transition: all .3s ease;
+}
+
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover{
+    background: rgb(16, 130, 145)!important;
+}
+
+/* footer */
+
+footer{
+    background: #000;
+    margin: 10px 0 10px 0;
+}
+
+footer h2{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    background: rgb(16, 130, 145);
+    padding: 10px;
+}
+
+footer .content-fot .red-social ul{
+    display: flex;
+    justify-content: center;
+}
+
+footer .content-fot .red-social ul li{
+    margin: 10px;
+    list-style: none;
+}
+
+footer .content-fot .red-social ul li a{
+    color: #fff;
+    font-size: 20px;
+    transition: all .100s ease;
+}
+
+
+footer .content-fot .red-social ul li a:hover{
+    color: rgb(16, 130, 145);
+}
+
+
+footer .content-fot .description{
+    display: flex;
+    color: #fff;
+    justify-content: space-around;
+    background: #222;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 15px;
+}
+
+footer .content-fot .description .list li{
+    color: #fff;
+}
+
+footer .content-fot .description h3{
+    color: rgb(16, 130, 145);
+    padding: 10px;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+
+footer .content-fot .description .list li{
+    list-style: none;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.derechos{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding:10px;
+    font-size: 20px;
+}
+
+.derechos a{
+    color: rgb(15, 36, 95);
+    text-decoration: none;
+} 
+
+.derechos a:hover{
+    text-decoration: underline;
+}
+
+@media(max-width: 720px){
+
+    body.disabledScroll{
+        overflow: hidden;
+    }
+    .icon{
+        display: block;
+    }
+
+    .icon.hide{
+        display: none;
+    }
+    .navbar .menu-list{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        background: rgb(255, 255, 255); 
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        transition: all .3s ease;
+    }
+
+    .navbar .menu-list.active{
+        left: 0%;
+
+    }
+
+    .navbar .menu-list li{
+        margin-top: 45px;
+    }
+
+
+
+}
+
+@media (max-width: 380px){
+    .navbar .logo a{
+        color: rgb(15, 36, 95);
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 810px){
+    .type .text{
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .teams .carousel .card img{
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        border-radius: 4%;
+        border: 1px solid  rgb(255, 255, 255);
+        transition: all .3s ease;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 425px){
+    .derechos{
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        padding:10px;
+        font-size: 15px;
+    }
+}
